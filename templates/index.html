@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NIELIT Admission Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>🎓 NIELIT Admission Assistant</h1>
+        <p>Ask about admission, courses, AI, Python and more</p>
+    </div>
+
+    <div class="top-buttons">
+        <button onclick="clearChat()">🆕 New Chat</button>
+        <button onclick="toggleTheme()">🌙 Theme</button>
+    </div>
+
+    <div id="chat-box" class="chat-box">
+
+        <div class="bot-message">
+            🤖 Welcome to NIELIT Admission Assistant!
+        </div>
+
+    </div>
+
+    <div class="input-area">
+
+        <input
+            type="text"
+            id="user-input"
+            placeholder="Type your question..."
+        >
+
+        <button onclick="sendMessage()">
+            Send ➤
+        </button>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
